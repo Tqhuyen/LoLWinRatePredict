@@ -7,18 +7,19 @@ pipeline {
       }
     }
 
-        stage('Print Info') {
-            steps {
-                echo "✅ Branch:"
-                echo "🕒 Build Number"
-                echo "📦 Workspace"
-            }
-        }
+    stage('Print Info') {
+      steps {
+        echo '✅ Branch:'
+        echo '🕒 Build Number'
+        echo '📦 Workspace'
+      }
     }
 
-    post {
-        always {
-            echo '🧼 Done with the pipeline!'
-        }
+  }
+  post {
+    always {
+      echo '🧼 Done with the pipeline!'
     }
+
+  }
 }
