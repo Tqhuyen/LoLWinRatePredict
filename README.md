@@ -1,2 +1,2 @@
 
-Toi bi ngu
+Toi bi nguy
