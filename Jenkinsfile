@@ -10,9 +10,9 @@ pipeline {
 
         stage('Print Info') {
             steps {
-                echo "✅ Branch: ${env.BRANCH_NAME}"
-                echo "🕒 Build Number: ${env.BUILD_NUMBER}"
-                echo "📦 Workspace: ${env.WORKSPACE}"
+                echo "✅ Branch"
+                echo "🕒 Build Number"
+                echo "📦 Workspace"
             }
         }
     }
