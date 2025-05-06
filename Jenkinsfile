@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('Start') {
-      steps {
-        echo '🚀 Jenkins Pipeline Triggered!'
+      parallel {
+        stage('Start') {
+          steps {
+            echo '🚀 Jenkins Pipeline Triggered!'
+          }
+        }
+
+        stage('') {
+          steps {
+            git(url: 'https://github.com/Tqhuyen/LoLWinRatePredict.git', branch: 'main')
+          }
+        }
+
       }
     }
 
